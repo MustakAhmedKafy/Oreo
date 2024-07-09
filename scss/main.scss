@@ -51,6 +51,27 @@
 //   border-radius: 3px;
 // }
 
+header {
+  img {
+    width: 120px;
+
+  }
+
+  font-size: 18px;
+  font-weight: 500;
+
+  .nav-item {
+    padding: 0 20px;
+  }
+}
+
+// banner
+.banner {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
 .hero {
   background: linear-gradient(to right, #000000, #434343);
   height: 100vh;
@@ -555,7 +576,7 @@
         padding: 15px 10px;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        
+
       }
     }
   }
