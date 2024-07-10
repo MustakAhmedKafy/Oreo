@@ -19,7 +19,7 @@
         <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -60,12 +60,36 @@
             through a range of services including SEO, PPC, social media marketing, and content creation.</p>
           <a href=""> <button class="btn btn-outline-primary" type="submit">Request a quote</button></a>
         </div>
-        <div class="col-md-10 mx-auto col-lg-5">
-          <img src="assets/img/Illustration.png" alt="">
+        <div class="col-md-10 col-lg-5">
+          <div class="text-end">
+            <img class="" src="assets/img/Illustration.png" alt="">
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- <div class="container pb-5 mb-5">
+    <div class="row">
+      <div class="col-md-2">
+        <img class="w-100" src="assets/img/workspacee-Photoroom.png" alt="">
+      </div>
+      <div class="col-md-2">
+        <img class="w-100" src="assets/img/cookies-Photoroom.png" alt="">
+      </div>
+    </div>
+  </div> -->
+  <div class="container mt-5">
+    <div class="logo-slide">
+      <div class="logo-content">
+        <img src="assets/img/workspacee-Photoroom.png" alt="Logo 1" class="logo-img">
+        <img src="assets/img/cookies-Photoroom.png" alt="Logo 2" class="logo-img">
+        <img src="assets/img/royal-docks.png" alt="Logo 3" class="logo-img">
+        <img src="assets/img/locate-mee.png" alt="Logo 4" class="logo-img">
+        <img src="assets/img/fatima.png" alt="Logo 1" class="logo-img">
+        <img src="assets/img/aa-logo.png" alt="Logo 2" class="logo-img">
+      </div>
+    </div>
+  </div>
 
   <!-- script -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -77,6 +101,37 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
   </script>
   <script src="assets/js/main.js"></script>
+
+
+  <script>
+    // script.js
+    document.addEventListener("DOMContentLoaded", () => {
+      const logoContent = document.querySelector(".logo-content");
+      const logos = Array.from(logoContent.children);
+      const logoWidth = logos[0].offsetWidth;
+      const logoCount = logos.length;
+
+      // Clone the logos to create a seamless loop
+      logos.forEach(logo => {
+        const clone = logo.cloneNode(true);
+        logoContent.appendChild(clone);
+      });
+
+      // Adjust animation duration based on the total width
+      const totalWidth = logoWidth * logoCount;
+      const animationDuration = (totalWidth / 100) * 1; // Adjust the speed by changing the multiplier
+      logoContent.style.animationDuration = `${animationDuration}s`;
+
+      // Add event listeners to pause and resume animation on hover
+      logoContent.addEventListener("mouseover", () => {
+        logoContent.classList.add("paused");
+      });
+
+      logoContent.addEventListener("mouseout", () => {
+        logoContent.classList.remove("paused");
+      });
+    });
+  </script>
 </body>
 
 </html>

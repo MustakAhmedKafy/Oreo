@@ -72,6 +72,48 @@ header {
   align-items: center;
 }
 
+// 
+// marquee
+
+
+.logo-slide {
+  overflow: hidden;
+  white-space: nowrap;
+
+  .logo-content {
+    display: flex;
+    animation: slide 20s linear infinite;
+
+    .logo-img {
+      margin: 0 1rem;
+      max-width: 200px;
+      transition: all 0.4s ease-in-out;
+      display: inline-block;
+      filter: grayscale(100);
+
+      &:hover {
+        filter: none;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
 .hero {
   background: linear-gradient(to right, #000000, #434343);
   height: 100vh;
@@ -613,5 +655,29 @@ header {
 
   .work-details .work-details-img {
     height: 600px;
+  }
+}
+
+// mobile area only
+@media (max-width: 768px) {
+  header ul {
+    padding-top: 20px;
+  }
+
+  header .nav-item {
+    padding: 0;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    border: 0;
+
+    i {
+      font-size: 30px;
+    }
   }
 }
