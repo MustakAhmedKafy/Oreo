@@ -2,8 +2,6 @@
 @import "button";
 
 
-
-
 .breadcrumb {
   font-weight: 500;
   font-size: 18px;
@@ -51,6 +49,34 @@
 //   border-radius: 3px;
 // }
 
+.section-title {
+  h2 {
+    padding: 5px 10px;
+    font-size: 24px;
+    line-height: 1.1;
+    font-family: Arial,
+      sans-serif;
+    font-weight: bold;
+    color: #000;
+    border-radius: 8px;
+    margin-bottom: 0;
+    background-color: $primary-color;
+    font-weight: 500;
+    color: #fff;
+
+  }
+
+  p {
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.section-title.d-flex {
+  gap: 10px;
+  align-items: center;
+}
+
 header {
   img {
     width: 120px;
@@ -86,15 +112,22 @@ header {
 
     .logo-img {
       margin: 0 1rem;
-      max-width: 200px;
+      width: 150px;
       transition: all 0.4s ease-in-out;
       display: inline-block;
       filter: grayscale(100);
+      object-fit: contain;
 
       &:hover {
         filter: none;
         transform: scale(1.1);
       }
+    }
+
+    .fatima,
+    .aa-logo {
+      width: 200px;
+      height: 150px;
     }
   }
 
@@ -114,6 +147,100 @@ header {
 }
 
 
+
+// our services
+.our-services {
+  .custom-card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .title {
+      display: inline-block;
+
+      padding: 5px 10px;
+      font-size: 24px;
+      line-height: 1.1;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: black;
+      border-radius: 8px;
+    }
+
+    .learn-more {
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+
+      .fa-arrow-right {
+        margin-left: 5px;
+
+        border-radius: 50%;
+        transform: rotate(-45deg);
+        height: 30px;
+        width: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    img {
+      height: 150px;
+    }
+  }
+
+  .card-wrapper {
+    border-bottom: 5px solid;
+    border-radius: 20px;
+  }
+
+  .bg-light {
+    .title {
+      color: #fff;
+      background-color: $primary-color;
+    }
+
+    .fa-arrow-right {
+      color: #fff;
+      background-color: $primary-color;
+    }
+  }
+
+  .bg-pink {
+    background-color: $primary-color;
+
+    .title {
+      color: $primary-color;
+      background-color: #fff;
+    }
+
+    .fa-arrow-right {
+      color: $primary-color;
+      background-color: #fff;
+    }
+  }
+
+  .bg-dark {
+
+    .title {
+      color: #000;
+      background-color: #fff;
+    }
+
+    .fa-arrow-right {
+      color: $primary-color;
+      background-color: #fff;
+    }
+  }
+}
+
+
+
+// page hero
 .hero {
   background: linear-gradient(to right, #000000, #434343);
   height: 100vh;
