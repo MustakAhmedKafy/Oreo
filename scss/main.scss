@@ -199,9 +199,11 @@ header {
   }
 
   .bg-light {
+    background-color: #F3F3F3 !important;
+
     .title {
-      color: #fff;
-      background-color: $primary-color;
+      color: #000;
+      background-color:#fff;
     }
 
     .fa-arrow-right {
@@ -211,20 +213,21 @@ header {
   }
 
   .bg-pink {
-    background-color: $primary-color;
+    background-color: #e6ffee;
 
     .title {
       color: $primary-color;
       background-color: #fff;
     }
 
-    .fa-arrow-right {
-      color: $primary-color;
-      background-color: #fff;
-    }
+     .fa-arrow-right {
+       color: #fff;
+       background-color: $primary-color;
+     }
   }
 
-  .bg-dark {
+  .bg-pink-light {
+    background-color: #e6e6ff;
 
     .title {
       color: #000;
@@ -232,12 +235,29 @@ header {
     }
 
     .fa-arrow-right {
-      color: $primary-color;
-      background-color: #fff;
+      color: #fff;
+      background-color: $primary-color;
     }
   }
 }
 
+// free-proposal
+.free-proposal {
+  .bg-light {
+    border-radius: 20px;
+
+  }
+
+  p {
+    font-weight: 500;
+  }
+
+  .proposal-img {
+    max-width: 100%;
+    height: 300px;
+    margin: -50px auto;
+  }
+}
 
 
 // page hero
