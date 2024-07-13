@@ -102,49 +102,56 @@ header {
 // marquee
 
 
-.logo-slide {
-  overflow: hidden;
-  white-space: nowrap;
 
-  .logo-content {
-    display: flex;
-    animation: slide 20s linear infinite;
+.partner-logo {
+  img {
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    filter: grayscale(100);
 
-    .logo-img {
-      margin: 0 1rem;
-      width: 150px;
-      transition: all 0.4s ease-in-out;
-      display: inline-block;
-      filter: grayscale(100);
-      object-fit: contain;
-
-      &:hover {
-        filter: none;
-        transform: scale(1.1);
-      }
+    &:hover {
+      filter: none;
+      transform: scale(1.1);
     }
-
-    .fatima,
-    .aa-logo {
-      width: 200px;
-      height: 150px;
-    }
-  }
-
-  .paused {
-    animation-play-state: paused;
   }
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
+// .logo-slide {
+//   overflow: hidden;
+//   white-space: nowrap;
 
-  to {
-    transform: translateX(-100%);
-  }
-}
+//   .logo-content {
+//     display: flex;
+//     animation: slide 20s linear infinite;
+
+//     .logo-img {
+//       margin: 0 1rem;
+//       width: 100px;
+//       transition: all 0.4s ease-in-out;
+//       display: inline-block;
+//       filter: grayscale(100);
+//       object-fit: contain;
+
+//     
+//     }
+
+
+//   }
+
+//   .paused {
+//     animation-play-state: paused;
+//   }
+// }
+
+// @keyframes slide {
+//   from {
+//     transform: translateX(0);
+//   }
+
+//   to {
+//     transform: translateX(-100%);
+//   }
+// }
 
 
 
@@ -199,11 +206,11 @@ header {
   }
 
   .bg-light {
-    background-color: #F3F3F3 !important;
+    background-color: #f3f3f383 !important;
 
     .title {
       color: #000;
-      background-color:#fff;
+      background-color: #fff;
     }
 
     .fa-arrow-right {
@@ -213,21 +220,21 @@ header {
   }
 
   .bg-pink {
-    background-color: #e6ffee;
+    background-color: #e6ffee88;
 
     .title {
       color: $primary-color;
       background-color: #fff;
     }
 
-     .fa-arrow-right {
-       color: #fff;
-       background-color: $primary-color;
-     }
+    .fa-arrow-right {
+      color: #fff;
+      background-color: $primary-color;
+    }
   }
 
   .bg-pink-light {
-    background-color: #e6e6ff;
+    background-color: #e6e6ff7d;
 
     .title {
       color: #000;
