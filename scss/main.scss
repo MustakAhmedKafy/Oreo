@@ -2,6 +2,13 @@
 @import "button";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+  font-family: "Space Grotesk",
+    sans-serif;
+}
+
 .breadcrumb {
   font-weight: 500;
   font-size: 18px;
@@ -261,10 +268,129 @@ header {
 
   .proposal-img {
     max-width: 100%;
-    height: 300px;
-    margin: -50px auto;
+    // height: 300px;
+    // margin: -50px auto;
   }
 }
+
+.case-study {
+  .bg-dark {
+    background-color: #191A23 !important;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: 500;
+
+    i {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .custom-card {
+    border-right: 1px solid #fff;
+  }
+}
+
+.working-process {
+  .accordion-button {
+    position: relative;
+    font-size: 20px;
+    color: #333;
+    background-color: #e6ffee;
+    outline: none;
+    transition: all 0.5s ease;
+    padding: 30px;
+    font-weight: 500;
+
+    &:focus {
+      outline: none; // Remove focus outline
+      box-shadow: none; // Remove any potential box-shadow
+    }
+
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      margin-left: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transition: all 0.5s;
+    }
+
+    &:not(.collapsed)::after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+      border: 1px solid #000;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    &.collapsed::after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+      border: 1px solid #000;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+
+
+    span {
+      font-size: 2rem;
+      padding-right: 12px;
+      font-weight: 700;
+    }
+  }
+
+  .accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .accordion-header {
+    margin-bottom: 0;
+  }
+
+  .accordion-body {
+    background-color: #e6ffee88;
+    padding: 30px;
+    border-top: 1px;
+    border-bottom: 5px solid #6b6b6b;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+
+  .accordion-button.collapsed {
+    background-color: #e6ffee88;
+    ;
+
+    border-bottom: 5px solid #ddd;
+    border-radius: 15px !important;
+    border: 1px solid #ddd;
+    border-bottom: 5px solid #ddd;
+  }
+
+  .accordion-button {
+    border: 1px solid #ddd;
+    border-bottom: 0px;
+    border-radius: 0 !important;
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+
+  }
+}
+
 
 
 // page hero
@@ -531,60 +657,64 @@ header {
 
 // blog
 
-.custom-card {
-  border-radius: 15px;
-  overflow: hidden;
+.tab-content {
+  .custom-card {
+    border-radius: 15px;
+    overflow: hidden;
 
-  .card-img-top {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 200px;
-    object-fit: cover;
-  }
+    .card-img-top {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 200px;
+      object-fit: cover;
+    }
 
-  .card-body {
-    padding: 1.5rem;
+    .card-body {
+      padding: 1.5rem;
 
-    .card-title {
-      margin-bottom: 1rem;
+      .card-title {
+        margin-bottom: 1rem;
 
-      h6 {
-        font-size: 0.875rem;
-        margin-bottom: 0.25rem;
+        h6 {
+          font-size: 0.875rem;
+          margin-bottom: 0.25rem;
+        }
+
+        h5 {
+          font-size: 1.25rem;
+          font-weight: bold;
+        }
       }
 
-      h5 {
+      .card-text {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .tags {
+        .badge {
+          margin-right: 0.5rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      i {
         font-size: 1.25rem;
-        font-weight: bold;
-      }
-    }
+        margin-left: 5px;
+        cursor: pointer;
 
-    .card-text {
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .tags {
-      .badge {
-        margin-right: 0.5rem;
-
-        &:last-child {
-          margin-right: 0;
+        &:hover {
+          color: $primary-color;
         }
       }
     }
-
-    i {
-      font-size: 1.25rem;
-      margin-left: 5px;
-      cursor: pointer;
-
-      &:hover {
-        color: $primary-color;
-      }
-    }
   }
+
 }
+
 
 .nav-tabs {
   border-bottom: 0;
