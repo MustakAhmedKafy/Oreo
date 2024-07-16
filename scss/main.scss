@@ -394,21 +394,22 @@ header {
 
 // testimonial-slider{
 .testimonial-slider {
-  background-color: #191A23;
+  // background-color: #191A23;
   border-radius: 15px;
 
   .testimonial-card {
-    border: 2px solid $primary-color;
-    border-radius: 10px;
+    border: 1px solid $primary-color;
+    border-radius: 15px;
     padding: 20px;
     position: relative;
+    background-color: #f9f9f9d4;
   }
 
   .testimonial-text {
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 20px;
-    color: #fff;
+    color: #191A23;
   }
 
   .testimonial-author {
@@ -423,11 +424,27 @@ header {
 
   .author-title {
     font-size: 0.9rem;
-    color: #ccc;
+    color: #191A23;
     margin-top: 0;
   }
 }
 
+
+.contact-us {
+border-radius: 15px;
+
+  .form-check-input:checked {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    box-shadow: 0 0 0 .25rem rgba(228, 65, 165, 0.25);
+  }
+
+  .form-control {
+    box-shadow: none;
+    outline: none;
+    border-color: $primary-color;
+  }
+}
 
 
 
