@@ -431,7 +431,7 @@ header {
 
 
 .contact-us {
-border-radius: 15px;
+  border-radius: 15px;
 
   .form-check-input:checked {
     background-color: $primary-color;
@@ -445,6 +445,97 @@ border-radius: 15px;
     border-color: $primary-color;
   }
 }
+
+.footer {
+  background-color: #191A23;
+
+  .footer-logo {
+    width: 150px;
+  }
+
+  h5 {
+    padding: 4px 6px;
+    background-color: $primary-color;
+    display: inline;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      padding: 10px 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .subscribe-form {
+    background-color: #292A32; // Slightly lighter dark background
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    .d-flex {
+      gap: 6px;
+
+      input {
+        width: 60%;
+      }
+
+      button {
+        width: 50%;
+      }
+    }
+
+    .form-control {
+      border: 1px solid #D1D1D1; // Light border color for input
+      background-color: #2C2C2C; // Dark background for input
+      color: #fff; // White text color
+      border-radius: 0.5rem;
+      box-shadow: none;
+    }
+
+
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    color: #1A1A1A;
+    text-decoration: none;
+  }
+
+  .footer-bottom {
+    a {
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}
+
 
 
 
