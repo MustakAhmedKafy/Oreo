@@ -487,17 +487,7 @@ header {
     padding: 1rem;
     border-radius: 0.5rem;
 
-    .d-flex {
-      gap: 6px;
 
-      input {
-        width: 60%;
-      }
-
-      button {
-        width: 50%;
-      }
-    }
 
     .form-control {
       border: 1px solid #D1D1D1; // Light border color for input
@@ -513,7 +503,6 @@ header {
   .social-icons {
     display: flex;
     gap: 1rem;
-    justify-content: center;
   }
 
   .social-icons a {
@@ -1086,6 +1075,21 @@ header {
   .work-details .work-details-img {
     height: 600px;
   }
+
+  .subscribe-form {
+    .flex {
+      gap: 6px;
+      display: flex;
+
+      input {
+        width: 60%;
+      }
+
+      button {
+        width: 50%;
+      }
+    }
+  }
 }
 
 // mobile area only
@@ -1108,6 +1112,15 @@ header {
 
     i {
       font-size: 30px;
+    }
+  }
+
+  .subscribe-form {
+    .flex {
+      button {
+        width: 100%;
+        margin-top: 10px;
+      }
     }
   }
 }
