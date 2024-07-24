@@ -1090,6 +1090,43 @@ header {
       }
     }
   }
+
+  .contact-us {
+    img {
+      width: 75%;
+    }
+  }
+}
+
+// tab area only 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    border: 0;
+
+    i {
+      font-size: 30px;
+    }
+  }
+
+  .banner {
+    height: 50vh;
+  }
+
+  .subscribe-form button {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .contact-us {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 // mobile area only
@@ -1121,6 +1158,12 @@ header {
         width: 100%;
         margin-top: 10px;
       }
+    }
+  }
+
+  .contact-us {
+    img {
+      width: 100%;
     }
   }
 }
