@@ -48,3 +48,8 @@
     border: 1px solid $primary-color;
   }
 }
+
+.btn:active {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+}
