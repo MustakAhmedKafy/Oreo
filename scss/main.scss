@@ -61,7 +61,7 @@ body {
     padding: 5px 10px;
     font-size: 22px;
     line-height: 1.1;
-    font-family: Arial,
+    font-family: "Space Grotesk",
       sans-serif;
     font-weight: bold;
     color: #000;
@@ -109,11 +109,7 @@ header {
   align-items: center;
 }
 
-// 
-// marquee
-
-
-
+// partner logo
 .partner-logo {
   img {
     transition: all 0.4s ease-in-out;
@@ -174,7 +170,6 @@ header {
 
     .title {
       display: inline-block;
-
       padding: 5px 10px;
       font-size: 24px;
       line-height: 1.1;
@@ -222,6 +217,8 @@ header {
     .title {
       color: #000;
       background-color: #fff;
+      font-family: "Space Grotesk",
+        sans-serif;
     }
 
     .fa-arrow-right {
@@ -236,6 +233,8 @@ header {
     .title {
       color: $primary-color;
       background-color: #fff;
+      font-family: "Space Grotesk",
+        sans-serif;
     }
 
     .fa-arrow-right {
@@ -250,6 +249,8 @@ header {
     .title {
       color: #000;
       background-color: #fff;
+      font-family: "Space Grotesk",
+        sans-serif;
     }
 
     .fa-arrow-right {
@@ -1061,6 +1062,45 @@ header {
   }
 }
 
+
+.community-hub {
+  input {
+    padding: 10px 20px;
+    box-shadow: none !important;
+
+    &:focus {
+      border-color: $primary-color;
+    }
+  }
+
+  .news-button {
+    gap: 10px;
+  }
+}
+
+.community-info {
+  .card {
+    border-radius: 1rem;
+    border-top: 5px solid $primary-color;
+
+    img {
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+      // height: 250px;
+      object-fit: cover;
+    }
+
+    height: 520px;
+    h5 {
+      font-size: 18px;
+    }
+
+    li {
+      font-size: 15px;
+
+    }
+  }
+}
 
 
 // tab area only 

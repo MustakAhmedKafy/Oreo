@@ -13,7 +13,34 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.community-page-hero {
+  background: rgba(0, 0, 0, 0) url(assets/img/community.jpg) repeat scroll 0 0 /
+    cover;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
 .page-hero::after {
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: auto auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.community-page-hero::after {
     background: rgb(0, 0, 0) none repeat scroll 0 0;
     content: "";
     height: 100%;
