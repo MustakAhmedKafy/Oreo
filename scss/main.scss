@@ -451,7 +451,38 @@ header {
   .form-control {
     box-shadow: none;
     outline: none;
-    border-color: $primary-color;
+    border: 0;
+    background-color: #f9f9f9;
+    padding: 6px 12px;
+  }
+
+  #formFile {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    padding: 6px 12px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+
+    i {
+      font-size: 22px;
+    }
+  }
+
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    color: $primary-color;
+    text-decoration: none;
+
   }
 }
 
@@ -524,6 +555,13 @@ header {
     border-radius: 50%;
     color: #1A1A1A;
     text-decoration: none;
+    transition: .5s;
+
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+      transition: .5s;
+    }
   }
 
   .footer-bottom {
