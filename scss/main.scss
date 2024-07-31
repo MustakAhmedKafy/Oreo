@@ -814,6 +814,81 @@ header {
 
 
 
+// achievement
+
+
+
+img {
+  border-radius: 8px;
+}
+
+.stat {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  span{
+    font-size: 1.5rem;
+  }
+  .fa-sterling-sign{
+    font-size: 2rem;
+  }
+}
+
+.label {
+  font-size: 1rem;
+  color: #888;
+}
+
+.info {
+  background-color: #e8f99b;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.tags .badge {
+  margin-right: 5px;
+  border: 1px solid #000;
+  padding: 6px 10px;
+  border-radius: 15px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  color: #555;
+}
+
+.arrow-link {
+  font-size: 3rem;
+  color: #000;
+  text-decoration: none;
+}
+.fa-arrow-right{
+  transform: rotate(-45deg);
+}
+
+
+.arrow-link:hover {
+  color: #555;
+}
+
+
 
 /*only mobile area */
 @media (max-width: 768px) {
