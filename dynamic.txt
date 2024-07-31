@@ -1,0 +1,8 @@
+1. blog page 
+2. blog details page 
+3. community hub page 
+4. contact page
+5. work page
+6. work-details dynamic
+7.testmonial dynamic
+8. subscribe to news dynamic
