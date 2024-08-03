@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page-hero {
   background: rgba(0, 0, 0, 0) url(assets/img/section-hero.jpg) repeat scroll 0
     0 / cover;
