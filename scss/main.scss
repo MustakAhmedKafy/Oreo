@@ -965,6 +965,21 @@ header {
   .info-section .fa-solid {
     font-size: 14px;
   }
+
+  .about-us .hero-title {
+    font-size: 2rem;
+  }
+
+  .about-us .with-text {
+    font-size: 1.5rem;
+    padding: 3px 10px;
+  }
+
+  .about-us-details {
+    img {
+      width: 100% !important;
+    }
+  }
 }
 
 
@@ -1345,6 +1360,15 @@ header {
       width: 100%;
     }
   }
+
+  .about-us .hero-title {
+    font-size: 3rem;
+  }
+
+  .about-us .hero-card-text {
+    font-size: .8rem;
+  }
+
 }
 
 // mobile area only
